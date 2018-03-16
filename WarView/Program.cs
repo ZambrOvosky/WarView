@@ -8,18 +8,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace WarView
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
+namespace WarView {
+    public class Program {
+        public static void Main(string[] args) {
             BuildWebHost(args).Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+            WebHost.CreateDefaultBuilder(args).UseStartup<Startup>().Build();
     }
 }
